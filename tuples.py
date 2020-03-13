@@ -59,7 +59,7 @@ mySelf={"firstname":"Kui",
                 "headteacher":"Fridah"
 
             },
-                {"primary":"milimani",
+                {"schoolName":"milimani",
                 "population":600,
                  "headteacher":"Keren"}
 
@@ -67,4 +67,7 @@ mySelf={"firstname":"Kui",
              }
 }
 
-# print(mySelf["schools"]["primary"][])
+print(mySelf["schools"]["primary"][1]["schoolName"])
+
+
+

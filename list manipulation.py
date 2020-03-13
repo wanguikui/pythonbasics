@@ -11,5 +11,11 @@ print(empty)
 empty.append(4)
 print(empty)
 #you cannot change the structure of a string
-name="Kivuti"
-name[1]="e"
+# name="Kivuti"
+# name[1]="e"
+
+
+dict={"age":38}
+
+(dict["age"])=40
+print(dict["age"])
