@@ -1,16 +1,83 @@
-def compare (num1,num2,num3,num4):
-    if num1>num2 and num1>num3 and num1 > num4:
-        return num1
-    elif num2>num1 and num2>num3 and num2>num4:
-        return num2
-    elif num3 > num1 and num3 > num2 and num3 > num4:
-        return num3
-    else:
-        return num4
+class Building():
+    rooms=6
+    doors=8
+    #lawn=True
+    #windows=10
+    #garage=True
+    #swimmingPool=False
+    def open_building(self):
+        print(f"{self.name} is now open")
+
+    def close_building(self):
+        print(f"{self.name} is now closed")
+
+    def vacant_rooms(self):
+        print(self.rooms-self.occupiedRooms)
 
 
-lg=compare(1000,1001,867,1)
-print(lg)
+#creating actual building(s) objects
+jamii = Building()
+kivuti = Building()
+cornerHouse = Building()
+kimathi = Building()
+
+#print(jamii)
+
+#print(jamii.rooms)
+#print(kivuti.rooms)
+#print(cornerHouse.rooms)
+cornerHouse = Building()
+cornerHouse.name = "Corner House"
+cornerHouse.open_building()
+cornerHouse.close_building()
+print(cornerHouse.name)
+cornerHouse.rooms=100
+cornerHouse.occupiedRooms=42
+cornerHouse.vacant_rooms()
+#cornerHouse.unoccupiedRooms=cornerHouse.rooms-cornerHouse.occupiedRooms
+#print(cornerHouse.unoccupiedRooms)
+print(cornerHouse.rooms)
+cornerHouse.security=12
+print(cornerHouse.security)
+#print(cornerHouse.basement)
+
+
+kimathi = Building()
+kimathi.name="Kimathi House"
+kimathi.open_building()
+kimathi.close_building()
+print(kimathi.name)
+kimathi.rooms=150
+print(kimathi.rooms)
+kimathi.basement=True
+print(kimathi.basement)
+kimathi.security=8
+print(kimathi.security)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

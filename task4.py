@@ -65,6 +65,51 @@ def compare (num1,num2,num3,num4):
 lg=compare(1000,1001,857,1)
 print(lg)
 
+#difference between largest and smallest values of integers in a list
+
+numList=[10,15,20,2,10,6]
+
+def difference(numList):
+    largest =max(numList)
+    smallest =min(numList)
+    soln = largest - smallest
+
+    return soln
+
+diff=difference(numList)
+print(diff)
+
+#function to concatenate two integer lists
+
+def conc (list1,list2):
+    return list1+list2
+new_list=conc([1,2,3],[4,5,6])
+print(new_list)
+
+
+#a function that takes two strings as arguments and return either True or False
+
+def compare(string1,string2):
+    if len(string1)==len(string2):
+        return True
+    else: return False
+checked_string=compare("abc","def")
+print(checked_string)
+
+#a function that converts a dictionary into a list, where each element represents a key-value pair.
+
+
+#k
+manufactureDict={"cost_price":float,"sell_price":float,"inventory":int}
+cp=float(input("costPrice "))
+sp=float(input("sellPrice "))
+stock=int(input("inventory "))
+
+profit=sp*stock - cp*stock
+
+print(profit)
+
+
 
 
 
